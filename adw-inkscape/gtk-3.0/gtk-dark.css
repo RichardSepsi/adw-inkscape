@@ -7863,7 +7863,7 @@ headerbar>box.vertical {
 #DockedDialogNotebook>header {
   border-bottom: 0;
 }
-#DialogNotebook>viewport>notebook#DockedDialogNotebook>header {
+#Dialog\ Window>box>box>widget>widget>#DialogNotebook>viewport>notebook#DockedDialogNotebook>header {
   padding: 0;
   margin-left: 10px;
   margin-right: 10px;
@@ -7957,10 +7957,23 @@ spinbutton button {
   border-radius: 12px;
 }
 
+#DockedDialogNotebook>stack>box#Objects>scrolledwindow>viewport>box>box>box {
+  margin-bottom: 5px;
+}
+
+#Objects entry.search>image {
+  margin-left: 4px;
+}
+
 
 /*  Scrollbar  */
 scrollbar {
 	background-color: transparent;
+  border-top-width: 0;
+}
+treeview ~ scrollbar.vertical {
+  border-top: 0;
+  margin-top: 0px;
 }
 scrollbar:not(.overlay-indicator) {
 	margin: 2px;
