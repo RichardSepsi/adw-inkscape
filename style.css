@@ -445,9 +445,9 @@ SPCanvas {
     min-height: 25px;
     padding: 0; /* remove padding to make inkspinscale the same height as spinbutton */
 }
-#InkSpinScale trough highlight {
+/*#InkSpinScale trough highlight {
     margin: 0;
-}
+}*/
 
 #InkSpinScale box.active {
     box-shadow: 0 0 0 1px rgb(74, 144, 217);
@@ -1150,7 +1150,7 @@ padding:3px 3px 10px 3px;
 popover.menu.menuize, /* GTK sets .menu/make_menuized_popover() sets .menuize */
 popover.popover-menu { /* Inkscape::UI::Widget::PopoverMenu */
     /* Rounded corners can glitch in GTK3 with submenus, and GtkMenu was square anyway = emulate */
-    border-radius: 0;
+
     border-color: @borders;
 
     padding: 0;
@@ -1161,7 +1161,7 @@ popover.popover-menu menu {
 }
 popover.menu.menuize modelbutton,
 popover.popover-menu menuitem {
-    border-radius: 0;
+
     outline-style: none;
 }
 /* Defeat defaulting to having more spacing between RadioButtons than GtkMenu */
