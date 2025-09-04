@@ -3152,7 +3152,7 @@ menu menuitem,
 .context-menu menuitem {
   min-height: 16px;
   min-width: 40px;
-  padding: 4px 6px;
+  padding: 6px 8px;
   text-shadow: none;
   font-weight: normal;
   border-radius: 9px;
@@ -3580,11 +3580,11 @@ notebook > header.top tab {
 }
 notebook > header.bottom tab {
   padding-top: 4px;
-}
+}/*
 notebook > stack:not(:only-child) {
   background-color: #232326;
 }
-
+*/
 scrollbar {
   background-color: @view_bg_color;
   transition: all 200ms linear;
@@ -7856,6 +7856,10 @@ headerbar>box.vertical {
 
 /*  Statusbar  */
 
+#Statusbar {
+  margin-right: -4px;
+}
+
 #SPDesktopWidget>box>box#Statusbar {
   margin-top: 6px;
   margin-bottom: 6px;
@@ -7978,11 +7982,6 @@ spinbutton button {
   margin-right: 10px;
 }
 
-#ToolboxCanvasPaned>separator {
-  
-  margin-right: -9px;
-}
-
 
 
 /*  Cards  */
@@ -8004,22 +8003,22 @@ spinbutton button {
   margin-top: 4px;
   margin-bottom: 4px;
   border-radius: 200px;
+  margin-left: 3px;
 }
 #DockedDialogNotebook>header>tabs>tab .close-button image {
   margin: 0 3px;
 }
-#DockedDialogNotebook>header>tabs {
+#DesktopHbox #DockedDialogNotebook>header>tabs {
   margin-left: -4px;
   margin-bottom: 1px;
 }
-#DockedDialogNotebook>header>tabs>tab {
+#DesktopHbox #DockedDialogNotebook>header>tabs>tab {
   padding-left: 11px;
   padding-right: 9px;
   padding-top: 4px;
   padding-bottom: 4px;
   margin-right: 6px;
 }
-
 
 #Objects entry.search>image {
   margin-left: 4px;
@@ -8032,23 +8031,128 @@ spinbutton button {
   padding: 20px ;
 }
 
+window>popover>scrolledwindow>viewport>menu>menuitem {
+  padding: 6px 10px;
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+window>popover>scrolledwindow>viewport>menu {
+  margin-bottom: -3px;
+  margin-right: -3px;
+}
+
+#Swatches>scrolledwindow>viewport {
+  border-radius: 14px;
+  background-color: #2f2e33;
+  padding: 4px;
+  padding-bottom: 5px;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#Swatches>scrolledwindow>viewport>box>box>box>box>box.color-palette-main-box {
+  padding: 6px;
+}
+#Swatches>scrolledwindow>viewport>box>box>box>button.flat.radio {
+  margin-left: 4px;
+}
+#Swatches>scrolledwindow>viewport>box>box>box>button.flat {
+  margin-top: 5px;
+}
+#Swatches>scrolledwindow>viewport>box>box>box>separator {
+  margin-top: 5px;
+}
+
+#FillStroke {
+  border-radius: 14px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#FillStroke>scrolledwindow>viewport>box>notebook {
+  border: 0;
+}
+#FillStroke #InkSpinScale {
+  margin-bottom: 3px;
+  margin-left: 7px;
+}
+#FillStroke #ObjectCompositeSettings #SimpleFilterModifier>box.horizontal>label {
+  margin-bottom: 4px;
+}
+#FillStroke #ObjectCompositeSettings #SimpleFilterModifier>box.horizontal>combobox {
+  margin-bottom: 4px;
+  margin-right: 2px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>stack {
+  margin-right: -2px;
+}
+#FillStroke #ColorNotebook>stack>box>grid {
+  margin-bottom: -10px;
+  margin-right: -2px;
+}
+#FillStroke #ColorNotebook>stack>box>grid>label {
+  margin-bottom: 3px;
+  margin-right: 2px;
+}
+#FillStroke #ColorNotebook>stack>box>grid>box {
+  margin-bottom: 3px;
+}
+#FillStroke #ColorNotebook>stack>box>grid>spinbutton {
+  margin-bottom: 3px;
+  margin-left: 2px;
+}
+#FillStroke #ColorNotebook>stack>box>expander {
+  margin-bottom: 6px;
+}
+#FillStroke #ColorNotebook>box.horizontal:last-child {
+  margin-left: 26px;
+}
+#FillStroke #ColorNotebook>box.horizontal:last-child>button {
+  margin-left: 6px;
+}
+
+#InkSpinScale {
+  min-height: 32px;
+}
+#InkSpinScale>scale>contents>trough>highlight {
+  min-height: 34px;
+}
+#InkSpinScale>scale>contents>trough {
+  margin-left: -4px;
+}
+#InkSpinScale {
+  margin-left: 4px;
+}
+#InkSpinScale>spinbutton>entry {
+  margin-right: 8px;
+}
+#InkSpinScale>spinbutton>button {
+  min-height: 32px;
+}
+
+notebook>header {
+  background-color: transparent;
+}
+notebook>stack {
+  background-color: transparent;
+}
+
 
 
 
 /*  Scrollbar  */
 
 scrollbar {
-	background-color: transparent;
   border-top-width: 0;
+}
+scrolledwindow scrollbar {
+  background-color: transparent;
 }
 treeview ~ scrollbar.vertical {
   border-top: 0;
   margin-top: 0px;
-}
+}/*
 scrollbar:not(.overlay-indicator) {
 	margin: 2px;
-}
-scrollbar+* {
+}*/
+scrolledwindow scrollbar+* {
 	background-color: transparent;
 }
 

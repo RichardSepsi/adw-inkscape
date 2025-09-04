@@ -3164,7 +3164,7 @@ menu menuitem,
 .context-menu menuitem {
   min-height: 16px;
   min-width: 40px;
-  padding: 4px 6px;
+  padding: 6px 8px;
   text-shadow: none;
   font-weight: normal;
   border-radius: 9px;
@@ -3592,10 +3592,10 @@ notebook > header.top tab {
 }
 notebook > header.bottom tab {
   padding-top: 4px;
-}
+}/*
 notebook > stack:not(:only-child) {
   background-color: #fafafb;
-}
+}*/
 
 scrollbar {
   background-color: @view_bg_color;
