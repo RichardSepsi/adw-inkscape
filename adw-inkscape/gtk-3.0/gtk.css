@@ -3482,7 +3482,6 @@ notebook > header > tabs > arrow:disabled {
 }
 notebook > header tab {
   min-height: 30px;
-  min-width: 30px;
   padding: 3px 12px;
   color: @window_fg_color;
   font-weight: normal;
@@ -5510,7 +5509,7 @@ paned > separator:selected {
   background-image: image(@accent_bg_color);
 }
 paned > separator:backdrop {
-  background-image: image(mix(currentColor,@window_bg_color,0.81));
+  background-image: image(#dddddf);
 }
 paned > separator.wide {
   min-width: 5px;
@@ -5527,7 +5526,7 @@ paned.horizontal > separator {
   background-repeat: repeat-y;
 }
 paned.horizontal > separator:dir(ltr) {
-  margin: 0 -8px 0 0;
+  margin: 0 -9px 0 0;
   padding: 0 8px 0 0;
   background-position: left;
 }

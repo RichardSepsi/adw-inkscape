@@ -3470,7 +3470,6 @@ notebook > header > tabs > arrow:disabled {
 }
 notebook > header tab {
   min-height: 30px;
-  min-width: 30px;
   padding: 3px 12px;
   color: @window_fg_color;
   font-weight: normal;
@@ -3778,6 +3777,7 @@ switch:disabled slider {
   background-color: mix(@view_bg_color,mix(white,@view_bg_color,0.2),0.5);
   box-shadow: none;
 }
+
 .view.content-view.check:not(list),
 .content-view:not(list) check {
   margin: 4px;
@@ -5542,7 +5542,7 @@ paned > separator:selected {
   background-image: image(@accent_bg_color);
 }
 paned > separator:backdrop {
-  background-image: image(mix(currentColor,@window_bg_color,0.73));
+  background-image: image(#393b3a)
 }
 paned > separator.wide {
   min-width: 5px;
@@ -5559,7 +5559,7 @@ paned.horizontal > separator {
   background-repeat: repeat-y;
 }
 paned.horizontal > separator:dir(ltr) {
-  margin: 0 -8px 0 0;
+  margin: 0 -9px 0 0;
   padding: 0 8px 0 0;
   background-position: left;
 }
@@ -7758,6 +7758,7 @@ geary-conversation-viewer#conversation_viewer searchbar > revealer > box {
 
 #DialogNotebook treeview.view:hover {
   background-color: rgba(222, 226, 223, 0.2);
+  border: 0;
 }
 
 .budgie-panel button {
@@ -7852,13 +7853,41 @@ headerbar>box.vertical {
 }
 
 
-/*  misc  */
+
+/*  Statusbar  */
 
 #SPDesktopWidget>box>box#Statusbar {
   margin-top: 6px;
   margin-bottom: 6px;
   margin-left: 10px;
 }
+#StatusbarZoomLabel {
+  margin-right: 6px;
+  margin-left: 8px;
+}
+#StatusbarRotateLabel {
+  margin-right: 6px;
+  margin-left: 8px;
+}
+#SelectedStyle>grid>button>label {
+  margin-right: 6px;
+  margin-left: 16px;
+}
+#SelectedStyle>grid>spinbutton>entry {
+  margin-right: 8px;
+}
+#LayerSelector {
+  margin: 0 3px;
+}
+#LayerSelector>button {
+  margin: 0 3px;
+}
+#Statusbar>separator {
+  margin-right: 6px;
+}
+
+
+/*  misc  */
 
 #DockedDialogNotebook>header {
   border-bottom: 0;
@@ -7889,9 +7918,9 @@ scrolledwindow {
 scrolledwindow.frame treeview{
   padding: 3px;
 }
-scrolledwindow.frame treeview:hover{
+/*scrolledwindow.frame treeview:focus{
   background: red;
-}
+}*/
 
 #ToolToolbar>scrolledwindow>viewport>box#tool-toolbar>flowbox>flowboxchild {
   padding: 3px 5px;
@@ -7945,6 +7974,16 @@ spinbutton button {
   padding: 0;
 }
 
+#DesktopHbox>#ToolboxCanvasPaned>box>#DialogMultipaned.horizontal {
+  margin-right: 10px;
+}
+
+#ToolboxCanvasPaned>separator {
+  
+  margin-right: -9px;
+}
+
+
 
 /*  Cards  */
 
@@ -7961,12 +8000,43 @@ spinbutton button {
   margin-bottom: 5px;
 }
 
+#DockedDialogNotebook>header>tabs>tab .close-button {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border-radius: 200px;
+}
+#DockedDialogNotebook>header>tabs>tab .close-button image {
+  margin: 0 3px;
+}
+#DockedDialogNotebook>header>tabs {
+  margin-left: -4px;
+  margin-bottom: 1px;
+}
+#DockedDialogNotebook>header>tabs>tab {
+  padding-left: 11px;
+  padding-right: 9px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-right: 6px;
+}
+
+
 #Objects entry.search>image {
   margin-left: 4px;
 }
 
+#ObjectsTreeView {
+  padding: 3px 2px ;
+}
+#ObjectsTreeView image{
+  padding: 20px ;
+}
+
+
+
 
 /*  Scrollbar  */
+
 scrollbar {
 	background-color: transparent;
   border-top-width: 0;
@@ -7981,3 +8051,20 @@ scrollbar:not(.overlay-indicator) {
 scrollbar+* {
 	background-color: transparent;
 }
+
+
+
+/*  Remove Layer selector from statusbar  */
+/*
+#LayerSelector>button {
+  margin-left: 40px;
+}
+#LayerSelector {
+  display: none;
+  opacity: 0;
+  min-width: 400px;
+  margin-right: -440px;
+}
+#Statusbar>separator {
+  margin-left: 6px;
+}*/
