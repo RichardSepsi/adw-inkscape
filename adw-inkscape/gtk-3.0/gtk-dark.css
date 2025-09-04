@@ -7929,6 +7929,9 @@ scrolledwindow.frame treeview{
 #ToolToolbar>scrolledwindow>viewport>box#tool-toolbar>flowbox>flowboxchild {
   padding: 3px 5px;
 }
+#ToolToolbar>scrolledwindow>viewport>box#tool-toolbar {
+  margin-top: -3px;
+}
 #ToolToolbar>scrolledwindow>viewport>box#tool-toolbar>flowbox>flowboxchild>button {
   min-width: 26px;
   min-height: 26px;
@@ -7938,7 +7941,7 @@ scrolledwindow.frame treeview{
   margin-top: 6px;
   margin-left: 6px;
   margin-right: 6px;
-  margin-bottom: 3px;
+  margin-bottom: 6px;
 }
 #SubToolBox>box>button {
   padding: 3px;
@@ -7997,6 +8000,18 @@ spinbutton button {
 
 #DockedDialogNotebook>stack>box#Objects>scrolledwindow>viewport>box>box>box {
   margin-bottom: 5px;
+}
+
+#DockedDialogNotebook scrolledwindow>scrollbar {
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+#DockedDialogNotebook scrolledwindow scrolledwindow>scrollbar {
+  margin: 0px;
+}
+#DockedDialogNotebook #Objects scrolledwindow scrolledwindow>scrollbar {
+  margin: 3px;
 }
 
 #DockedDialogNotebook>header>tabs>tab .close-button {
@@ -8060,6 +8075,9 @@ window>popover>scrolledwindow>viewport>menu {
 #Swatches>scrolledwindow>viewport>box>box>box>separator {
   margin-top: 5px;
 }
+#Swatches>scrolledwindow>viewport>box>box>box>button.popup.toggle {
+  margin-right: 3px;
+}
 
 #FillStroke {
   border-radius: 14px;
@@ -8107,6 +8125,27 @@ window>popover>scrolledwindow>viewport>menu {
 #FillStroke #ColorNotebook>box.horizontal:last-child>button {
   margin-left: 6px;
 }
+#FillStroke #NotebookPage>grid>box>box>box.vertical:last-child {
+  margin-top: -2px;
+}
+#FillStroke #NotebookPage>grid>box>box>#PaintSelector {
+  margin-top: 2px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+#FillStroke #NotebookPage>grid>box>box>#PaintSelector>button {
+  min-height: 20px;
+  padding: 0 6px;
+  margin-right: 6px;
+}
+#FillStroke #NotebookPage>grid>box>box>#PaintSelector>box>button {
+  min-height: 20px;
+  padding: 4px 6px;
+}
+#FillStroke #NotebookPage>grid>box>box>#PaintSelector>box>button:not(:last-child) {
+  margin-right: 6px;
+}
+
 
 #InkSpinScale {
   min-height: 32px;
