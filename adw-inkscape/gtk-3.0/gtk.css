@@ -7778,7 +7778,33 @@ window.background:not(.solid-csd):not(.csd) > notebook > stack:not(:only-child) 
 
 /*  Menubar and titlebar  */
 
+window {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+window.maximized {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+#Dialog\ Window {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+dialog:only-child {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
 menubar {
+    min-height: 40px;
+  /*margin-top: -36px;*/
+  background: transparent;
+  position: absolute;
+  padding-left: 6px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+window.maximized menubar {
   min-height: 40px;
   /*margin-top: -36px;*/
   background: transparent;
@@ -7832,21 +7858,27 @@ dialog:only-child>headerbar>box.vertical {
 
 headerbar {
   background: transparent;
+  border-bottom: 0;
 }
 headerbar:backdrop {
   background: transparent;
+  border-bottom: 0;
 }
 #Dialog\ Window headerbar {
   background: @headerbar_bg_color;
+  border-bottom: 1px solid rgba(0,0,6,0.36);
 }
 #Dialog\ Window headerbar:backdrop {
   background: @headerbar_backdrop_color;
+  border-bottom: 1px solid rgba(0,0,6,0.36);
 }
 dialog:only-child headerbar {
   background: @headerbar_bg_color;
+  border-bottom: 1px solid rgba(0,0,6,0.36);
 }
 dialog:only-child headerbar:backdrop {
   background: @headerbar_backdrop_color;
+  border-bottom: 1px solid rgba(0,0,6,0.36);
 }
 
 
