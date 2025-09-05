@@ -1137,7 +1137,7 @@ padding:3px 3px 10px 3px;
 }
 #LPEParentBox{
     margin:10px 4px;
-    padding:0;
+    /*padding:0;*/
 }
 
 /* min size for an angle slider in gradient editor */
