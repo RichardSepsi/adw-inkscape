@@ -3777,7 +3777,6 @@ switch:disabled slider {
   background-color: mix(@view_bg_color,mix(white,@view_bg_color,0.2),0.5);
   box-shadow: none;
 }
-
 .view.content-view.check:not(list),
 .content-view:not(list) check {
   margin: 4px;
@@ -7979,11 +7978,11 @@ window>popover>scrolledwindow>viewport>menu {
 
 window>popover.background.menu.menuize>stack>box>box>box>box{
   padding: 5px 8px;
-}
+}/*
 window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
   background-color: red;
 }
-
+*/
 
 #Swatches>scrolledwindow>viewport {
   border-radius: 14px;
