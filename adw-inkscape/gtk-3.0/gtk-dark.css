@@ -8364,6 +8364,7 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 }
 #DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>grid>button {
   margin-top: 3px;
+  padding: 5px;
 }
 #DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>grid>button:not(:last-child) {
   margin-right: 3px;
@@ -8388,9 +8389,182 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 #DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>box.horizontal>label {
   margin-right: 3px;
 }
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>box.horizontal>button:not(:last-child) {
+  margin-right: 1px;
+}
 #DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook {
   border: 0;
 }
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>stack>box>label.heading {
+  margin-bottom: 4px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header {
+  border-bottom: 0;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: -1px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:not(:nth-child(2)) box {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab>box {
+  background-color: #424347;
+  padding: 8px 12px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:hover box {
+  background-color: #4e4e52;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:checked box {
+  background-color: #6d6d6f;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:checked:hover box {
+  background-color: #79787b;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:nth-child(2) {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:nth-child(2) box {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:nth-last-child(2) {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>header>tabs>tab:nth-last-child(2) box {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>stack>box>box>box>checkbutton {
+  margin-bottom: 5px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>stack>box>box>grid>box>combobox {
+  margin-bottom: 2px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>stack>box>box>grid>box>spinbutton {
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook>stack>box>box>grid>box>button {
+  padding: 5px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>button.text-button {
+  margin-bottom: 3px;
+  margin-right: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>scrolledwindow {
+  border-radius: 12px;
+  margin-right: 6px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>button {
+  margin-left: -1px;
+  margin-right: 6px;
+  margin-bottom: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>scrolledwindow>treeview {
+  border-radius: 12px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook {
+  border: 0;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>stack>box#NotebookPage>grid>label {
+  margin-top: 6px;
+  margin-bottom: 2px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>stack>box#NotebookPage>grid>scrolledwindow {
+  border-radius: 12px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>stack>box#NotebookPage>grid>scrolledwindow>treeview {
+  border-radius: 12px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>stack>box#NotebookPage>grid>scrolledwindow>textview {
+  border-radius: 12px;
+  padding: 12px
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>stack>box#NotebookPage>grid>scrolledwindow>treeview>header>button {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-left: 8px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>stack>box#NotebookPage>grid>box>button {
+  margin-top: 3px;
+  margin-right: 6px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header {
+  border-bottom: 0;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: -1px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 2px 8px;
+  background-color: #424347;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs>tab:not(:first-child) {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs>tab:hover {
+  background-color: #4e4e52;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs>tab:checked {
+  background-color: #6d6d6f;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs>tab:checked:hover {
+  background-color: #79787b;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>notebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>entry {
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>label {
+  margin-right: 6px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>scrolledwindow {
+  border-radius: 12px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>scrolledwindow>textview {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>box.horizontal>label {
+  margin-top: 1px;
+  margin-bottom: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>box.horizontal>entry {
+  margin-top: 1px;
+  margin-bottom: 3px;
+}
+
 
 
 
