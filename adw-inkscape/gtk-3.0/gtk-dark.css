@@ -7937,10 +7937,6 @@ scrolledwindow.frame treeview{
   min-height: 26px;
 }
 
-#DesktopHbox>box.horizontal>box.inkscape-toolbar.vertical {
-  margin-right: 6px;
-}
-
 #SubToolBox>box {
   margin-top: 6px;
   margin-left: 6px;
@@ -7987,6 +7983,15 @@ spinbutton button {
 
 #DesktopHbox>#ToolboxCanvasPaned>box>#DialogMultipaned.horizontal {
   margin-right: 10px;
+}
+
+
+#DesktopHbox>box.horizontal>box.inkscape-toolbar.vertical {
+  margin-right: 6px;
+  margin-top: 3px;
+}
+#DesktopHbox>box>box.inkscape-toolbar.vertical>button {
+  padding: 4px 8px;
 }
 
 
@@ -8285,6 +8290,9 @@ window>popover>scrolledwindow>viewport>menu {
 #AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute)>box>label{
   margin-left: 6px;
 }
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute)>label{
+  margin-left: 6px;
+}
 #AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute) checkbutton {
   margin-top: 2px;
 }
@@ -8313,6 +8321,25 @@ window>popover>scrolledwindow>viewport>menu {
 
 #AlignDistribute>scrolledwindow>viewport>box>box>button.wide-apply-button {
   margin-bottom: 2px;
+}
+
+
+#LivePathEffect {
+  border-radius: 14px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#LivePathEffect #LPEAddContainer {
+  margin-top: 1px;
+  margin-left: 1px;
+}
+#LivePathEffect #LPEListBox {
+  background-color: transparent;
+}
+#LivePathEffect #LPEListBox #currentlpe {
+  padding-top: 5px;
+  border-top: 1px solid mix(currentColor,@window_bg_color,0.85);
+  background-color: transparent;
 }
 
 
