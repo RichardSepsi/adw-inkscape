@@ -980,7 +980,7 @@ padding:3px 3px 10px 3px;
     border-width:0;
     border-style:none;
     outline-width:0;
-}
+}/*
 #LivePathEffect list row > box{
     margin:0;
     padding:1px;
@@ -990,7 +990,7 @@ padding:3px 3px 10px 3px;
     border-style:solid;
     border-color:@borders;
     outline-width:0;
-}
+}*/
 
 #LivePathEffect list row:last-child  > box{
     margin-bottom:0px;
