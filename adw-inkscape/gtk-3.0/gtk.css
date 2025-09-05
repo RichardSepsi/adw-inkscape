@@ -7866,19 +7866,19 @@ headerbar:backdrop {
 }
 #Dialog\ Window headerbar {
   background: @headerbar_bg_color;
-  border-bottom: 1px solid rgba(0,0,6,0.36);
+  border-bottom: 1px solid rgba(0,0,6,0.12);
 }
 #Dialog\ Window headerbar:backdrop {
   background: @headerbar_backdrop_color;
-  border-bottom: 1px solid rgba(0,0,6,0.36);
+  border-bottom: 1px solid rgba(0,0,6,0.12);
 }
 dialog:only-child headerbar {
   background: @headerbar_bg_color;
-  border-bottom: 1px solid rgba(0,0,6,0.36);
+  border-bottom: 1px solid rgba(0,0,6,0.12);
 }
 dialog:only-child headerbar:backdrop {
   background: @headerbar_backdrop_color;
-  border-bottom: 1px solid rgba(0,0,6,0.36);
+  border-bottom: 1px solid rgba(0,0,6,0.12);
 }
 
 
