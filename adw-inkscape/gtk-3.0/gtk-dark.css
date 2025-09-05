@@ -3371,13 +3371,13 @@ notebook > header.top {
 }
 notebook > header.top > tabs {
   margin-bottom: -2px;
-}
+}/*
 notebook > header.top > tabs > tab:not(.reorderable-page):hover {
   box-shadow: inset 0 -4px alpha(currentColor,0.15);
 }
 notebook > header.top > tabs > tab:not(.reorderable-page):checked {
   box-shadow: inset 0 -4px @accent_bg_color;
-}
+}*/
 notebook > header.bottom {
   border-top-style: solid;
 }
@@ -7852,6 +7852,18 @@ headerbar>box.vertical {
   opacity: 1;
 }
 
+dialog:only-child>headerbar {
+  margin-top: 0px;
+}
+dialog:only-child>headerbar>box {
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+dialog:only-child>headerbar>box.vertical {
+  display: all;
+  opacity: 1;
+}
+
 
 
 /*  Statusbar  */
@@ -7888,110 +7900,6 @@ headerbar>box.vertical {
 }
 #Statusbar>separator {
   margin-right: 6px;
-}
-
-
-/*  misc  */
-
-#DockedDialogNotebook>header {
-  border-bottom: 0;
-}
-#Dialog\ Window>box>box>widget>widget>#DialogNotebook>viewport>notebook#DockedDialogNotebook>header {
-  padding: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 10px;
-  margin-bottom: -6px;
-}
-
-#Preferences>scrolledwindow>viewport>box>box>box>entry {
-  margin-bottom: 5px;
-}
-#Preferences>scrolledwindow>viewport>box>box>box>scrolledwindow {
-  border-radius: 12px;
-  background-color: #2f2e33;
-}
-#Preferences>scrolledwindow>viewport>box>box>box>scrolledwindow>treeview {
-  border-radius: 12px;
-  background-color: #2f2e33;
-}
-
-scrolledwindow {
-  border-top-style: none;
-}
-scrolledwindow.frame treeview{
-  padding: 3px;
-}
-/*scrolledwindow.frame treeview:focus{
-  background: red;
-}*/
-
-#ToolToolbar>scrolledwindow>viewport>box#tool-toolbar>flowbox>flowboxchild {
-  padding: 3px 5px;
-}
-#ToolToolbar>scrolledwindow>viewport>box#tool-toolbar {
-  margin-top: -3px;
-}
-#ToolToolbar>scrolledwindow>viewport>box#tool-toolbar>flowbox>flowboxchild>button {
-  min-width: 26px;
-  min-height: 26px;
-}
-
-#SubToolBox>box {
-  margin-top: 6px;
-  margin-left: 6px;
-  margin-right: 6px;
-  margin-bottom: 6px;
-}
-#SubToolBox>box>button {
-  padding: 3px;
-  min-width: 26px;
-  min-height: 26px;
-  margin-right: 2px;
-}
-#SubToolBox>box>box>label {
-  margin-right: 8px;
-  margin-left: 8px;
-}
-#SubToolBox>box>box>spinbutton {
-  min-height: 26px;
-  margin-right: 3px;
-}
-#SubToolBox>box>box>spinbutton>entry {
-  min-height: 26px;
-}
-#TopToolbars>box>box {
-  margin-top: 6px;
-  margin-left: 6px;
-  margin-right: 6px;
-  margin-bottom: 0px;
-}
-#TopToolbars>box>box>button {
-  padding: 3px;
-  min-width: 26px;
-  min-height: 26px;
-  margin-right: 2px;
-}
-#TopToolbars>box>box>button:last-child {
-  margin-right: 0px;
-}
-
-spinbutton button {
-  min-width: 26px;
-  padding: 0;
-}
-
-#DesktopHbox>#ToolboxCanvasPaned>box>#DialogMultipaned.horizontal {
-  margin-right: 10px;
-}
-
-
-#DesktopHbox>box.horizontal>box.inkscape-toolbar.vertical {
-  margin-right: 6px;
-  margin-top: 3px;
-}
-#DesktopHbox>box>box.inkscape-toolbar.vertical>button {
-  padding: 4px 8px;
 }
 
 
@@ -8066,6 +7974,14 @@ window>popover>scrolledwindow>viewport>menu>menuitem {
 window>popover>scrolledwindow>viewport>menu {
   margin-bottom: -3px;
   margin-right: -3px;
+}
+
+
+window>popover.background.menu.menuize>stack>box>box>box>box{
+  padding: 5px 8px;
+}
+window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
+  background-color: red;
 }
 
 
@@ -8294,7 +8210,7 @@ window>popover>scrolledwindow>viewport>menu {
   margin-left: 6px;
 }
 #AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute) checkbutton {
-  margin-top: 2px;
+  margin-top: 4px;
 }
 #AlignDistribute #AlignAndDistribute>box>frame>label {
   margin-left: 6px;
@@ -8323,6 +8239,13 @@ window>popover>scrolledwindow>viewport>menu {
   margin-bottom: 2px;
 }
 
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute)>box>grid>box.horizontal:first-child {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute)>box>grid>combobox {
+  margin-bottom: 5px;
+}
 
 #LivePathEffect {
   border-radius: 14px;
@@ -8341,34 +8264,133 @@ window>popover>scrolledwindow>viewport>menu {
   border-top: 1px solid mix(currentColor,@window_bg_color,0.85);
   background-color: transparent;
 }
-
-
-#InkSpinScale {
-  min-height: 32px;
+#LivePathEffect #LPECurrentItem>box {
+  margin: 4px 0;
 }
-#InkSpinScale>scale>contents>trough>highlight {
-  min-height: 34px;
+#LivePathEffect #currentlpe>#LPEEffectItem>overlay>expander>box>box>combobox {
+  margin-left: 6px;
 }
-#InkSpinScale>scale>contents>trough {
-  margin-left: -4px;
+#LivePathEffect #currentlpe>#LPEEffectItem>overlay>expander>box>box>spinbutton {
+  margin-left: 6px;
 }
-#InkSpinScale {
-  margin-left: 4px;
+#LivePathEffect #currentlpe>#LPEEffectItem>overlay>expander>box>checkbutton {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
-#InkSpinScale>spinbutton>entry {
-  margin-right: 8px;
-}
-#InkSpinScale>spinbutton>button {
-  min-height: 32px;
-}
-
-notebook>header {
+#LivePathEffect #LPEParentBox {
   background-color: transparent;
+  padding-bottom: 6px;
 }
-notebook>stack {
-  background-color: transparent;
+#LivePathEffect #LPEParentBox>row {
+  
 }
 
+#DocumentProperties {
+  border-radius: 14px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook {
+  border: 0;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header {
+  border-bottom: 0;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: -1px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab:not(:first-child) {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab {
+  background-color: #424347;
+  padding: 4px 12px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab:hover {
+  background-color: #4e4e52;
+  box-shadow: 0;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab:checked {
+  background-color: #6d6d6f;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab:checked:hover {
+  background-color: #79787b;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage {
+  margin-top: 6px;
+  padding-left: 6px;
+}
+
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>label {
+  margin-right: 6px;
+  margin-bottom: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>spinbutton {
+  margin-bottom: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>button {
+  margin-bottom: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>combobox {
+  margin-bottom: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>combobox>box.horizontal.linked {
+  margin-left: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>button.flat.image-button.link-edit-button {
+  margin-left: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid:first-child {
+  margin-right: 6px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>grid>button {
+  margin-top: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>grid>button:not(:last-child) {
+  margin-right: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>grid>grid>box>checkbutton {
+  margin-bottom: 4px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>checkbutton {
+  margin-top: 4px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>box.horizontal {
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>box.horizontal>button {
+  margin-left: 3px;
+  padding: 5px 5px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>button:last-child {
+  margin-top: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>box.horizontal>label {
+  margin-right: 3px;
+}
+#DocumentProperties>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>notebook {
+  border: 0;
+}
 
 
 
@@ -8408,9 +8430,171 @@ scrolledwindow scrollbar+* {
   margin-left: 6px;
 }*/
 
-checkbutton>check {
+
+
+/*  misc  */
+
+#Dialog\ Window>box {
+  padding: 3px;
+}
+
+#DockedDialogNotebook>header {
+  border-bottom: 0;
+}
+#Dialog\ Window>box>box>widget>widget>#DialogNotebook>viewport>notebook#DockedDialogNotebook>header {
+  margin-left: -2px;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+#Preferences {
+  margin: -11px;
+}
+#Preferences>scrolledwindow>viewport>box>box>box>entry {
+  margin-bottom: 5px;
+}
+#Preferences>scrolledwindow>viewport>box>box>box>scrolledwindow {
+  border-radius: 12px;
+  background-color: #2f2e33;
+}
+#Preferences>scrolledwindow>viewport>box>box>box>scrolledwindow>treeview {
+  border-radius: 12px;
+  background-color: #2f2e33;
+}
+
+scrolledwindow {
+  border-top-style: none;
+}
+scrolledwindow.frame treeview{
+  padding: 3px;
+}
+/*scrolledwindow.frame treeview:focus{
+  background: red;
+}*/
+
+#ToolToolbar>scrolledwindow>viewport>box#tool-toolbar>flowbox>flowboxchild {
+  padding: 3px 5px;
+}
+#ToolToolbar>scrolledwindow>viewport>box#tool-toolbar {
+  margin-top: -3px;
+}
+#ToolToolbar>scrolledwindow>viewport>box#tool-toolbar>flowbox>flowboxchild>button {
+  min-width: 26px;
+  min-height: 26px;
+}
+
+#SubToolBox>box {
+  margin-top: 6px;
+  margin-left: 6px;
   margin-right: 6px;
+  margin-bottom: 6px;
+}
+#SubToolBox>box>button {
+  padding: 3px;
+  min-width: 26px;
+  min-height: 26px;
+  margin-right: 2px;
+}
+#SubToolBox>box>box>label {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+#SubToolBox>box>box>spinbutton {
+  min-height: 26px;
+  margin-right: 3px;
+}
+#SubToolBox>box>box>spinbutton>entry {
+  min-height: 26px;
+}
+#TopToolbars>box>box {
+  margin-top: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  margin-bottom: 0px;
+}
+#TopToolbars>box>box>button {
+  padding: 3px;
+  min-width: 26px;
+  min-height: 26px;
+  margin-right: 2px;
+}
+#TopToolbars>box>box>button:last-child {
+  margin-right: 0px;
+}
+
+spinbutton button {
+  min-width: 26px;
+  padding: 0;
+}
+
+#DesktopHbox>#ToolboxCanvasPaned>box>#DialogMultipaned.horizontal {
+  margin-right: 10px;
+}
+
+
+#DesktopHbox>box.horizontal>box.inkscape-toolbar.vertical {
+  margin-right: 6px;
+  margin-top: 3px;
+}
+#DesktopHbox>box>box.inkscape-toolbar.vertical>button {
+  padding: 4px 8px;
+}
+
+checkbutton>check {
+  margin-right: 8px;
 }
 radiobutton>radio {
-  margin-right: 6px;
+  margin-right: 8px;
+}
+
+dialog:only-child #ColorNotebook>stack>box>grid {
+  margin-bottom: -10px;
+  margin-right: -2px;
+}
+dialog:only-child #ColorNotebook>stack>box>grid>label {
+  margin-bottom: 3px;
+  margin-right: 2px;
+}
+dialog:only-child #ColorNotebook>stack>box>grid>box {
+  margin-bottom: 3px;
+}
+dialog:only-child #ColorNotebook>stack>box>grid>spinbutton {
+  margin-bottom: 3px;
+  margin-left: 2px;
+}
+dialog:only-child #ColorNotebook>stack>box>expander {
+  margin-bottom: 6px;
+}
+dialog:only-child #ColorNotebook>box.horizontal:last-child {
+  margin-left: 26px;
+}
+dialog:only-child #ColorNotebook>box.horizontal:last-child>button {
+  margin-left: 6px;
+}
+
+
+#InkSpinScale {
+  min-height: 32px;
+}
+#InkSpinScale>scale>contents>trough>highlight {
+  min-height: 34px;
+}
+#InkSpinScale>scale>contents>trough {
+  margin-left: -4px;
+}
+#InkSpinScale {
+  margin-left: 4px;
+}
+#InkSpinScale>spinbutton>entry {
+  margin-right: 8px;
+}
+#InkSpinScale>spinbutton>button {
+  min-height: 32px;
+}
+
+notebook>header {
+  background-color: transparent;
+}
+notebook>stack {
+  background-color: transparent;
 }
