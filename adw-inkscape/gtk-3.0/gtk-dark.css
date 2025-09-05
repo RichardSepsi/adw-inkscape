@@ -7937,6 +7937,10 @@ scrolledwindow.frame treeview{
   min-height: 26px;
 }
 
+#DesktopHbox>box.horizontal>box.inkscape-toolbar.vertical {
+  margin-right: 6px;
+}
+
 #SubToolBox>box {
   margin-top: 6px;
   margin-left: 6px;
@@ -8034,6 +8038,9 @@ spinbutton button {
   padding-bottom: 4px;
   margin-right: 6px;
 }
+#DesktopHbox #DockedDialogNotebook>header #DialogMenuButton {
+  margin-right: 8px;
+}
 
 #Objects entry.search>image {
   margin-left: 4px;
@@ -8055,6 +8062,7 @@ window>popover>scrolledwindow>viewport>menu {
   margin-bottom: -3px;
   margin-right: -3px;
 }
+
 
 #Swatches>scrolledwindow>viewport {
   border-radius: 14px;
@@ -8079,6 +8087,7 @@ window>popover>scrolledwindow>viewport>menu {
   margin-right: 3px;
 }
 
+
 #FillStroke {
   border-radius: 14px;
   background-color: #2f2e33;
@@ -8093,6 +8102,7 @@ window>popover>scrolledwindow>viewport>menu {
 }
 #FillStroke #ObjectCompositeSettings #SimpleFilterModifier>box.horizontal>label {
   margin-bottom: 4px;
+  margin-right: 4px;
 }
 #FillStroke #ObjectCompositeSettings #SimpleFilterModifier>box.horizontal>combobox {
   margin-bottom: 4px;
@@ -8144,6 +8154,165 @@ window>popover>scrolledwindow>viewport>menu {
 }
 #FillStroke #NotebookPage>grid>box>box>#PaintSelector>box>button:not(:last-child) {
   margin-right: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>stack>box>grid>box>box>box>box>grid#ColorNotebook>box>label {
+  margin-right: 4px;
+  margin-left: 6px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>stack>box>grid>box>box>box.horizontal>label {
+  margin-left: 6px;
+  margin-top: 6px;
+}
+
+#FillStroke>scrolledwindow>viewport>box>notebook>header {
+  border-bottom: 0;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: -1px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:not(:first-child) box {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab>box {
+  background-color: #424347;
+  padding: 8px 12px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:hover box {
+  background-color: #4e4e52;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:checked box {
+  background-color: #6d6d6f;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:checked:hover box {
+  background-color: #79787b;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:first-child box {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+#FillStroke>scrolledwindow>viewport>box>notebook>header>tabs>tab:last-child box {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+#FillStroke #StrokeSelector>grid>label {
+  margin-right: 6px;
+}
+
+
+#AlignDistribute {
+  border-radius: 14px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook {
+  border: 0;
+}
+
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header {
+  border-bottom: 0;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: -1px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:not(:first-child) box {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab>box {
+  background-color: #424347;
+  padding: 8px 12px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:hover box {
+  background-color: #4e4e52;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:checked box {
+  background-color: #6d6d6f;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:checked:hover box {
+  background-color: #79787b;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:first-child box {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>header>tabs>tab:last-child box {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#AlignDistribute #AlignAndDistribute{
+  margin-bottom: -12px;
+}
+#AlignDistribute #AlignAndDistribute>box>box#align-and-distribute-object>frame>box>grid>button {
+  margin-bottom: 6px;
+  margin-right: 6px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute)>box>label{
+  margin-left: 6px;
+}
+#AlignDistribute>scrolledwindow>viewport>box>box>notebook>stack>box:not(#AlignAndDistribute) checkbutton {
+  margin-top: 2px;
+}
+#AlignDistribute #AlignAndDistribute>box>frame>label {
+  margin-left: 6px;
+}
+#AlignDistribute #AlignAndDistribute>box>frame>box>label {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#AlignDistribute #AlignAndDistribute>box>frame>box>button {
+  margin-left: -2px;
+}
+#AlignDistribute #AlignAndDistribute>box>box>frame>label {
+  margin-left: 6px;
+  margin-bottom: 2px;
+}
+
+#AlignDistribute #AlignAndDistribute>box>box>frame>box>box>label {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+#AlignDistribute #AlignAndDistribute>box>box>frame>box>box {
+  margin-bottom: 6px;
+}
+
+#AlignDistribute>scrolledwindow>viewport>box>box>button.wide-apply-button {
+  margin-bottom: 2px;
 }
 
 
@@ -8211,3 +8380,10 @@ scrolledwindow scrollbar+* {
 #Statusbar>separator {
   margin-left: 6px;
 }*/
+
+checkbutton>check {
+  margin-right: 6px;
+}
+radiobutton>radio {
+  margin-right: 6px;
+}
