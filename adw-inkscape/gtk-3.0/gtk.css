@@ -7783,7 +7783,6 @@ menubar {
   /*margin-top: -36px;*/
   background: transparent;
   position: absolute;
-  z-index: 99999;
   padding-left: 6px;
 }
 menubar.shifticonmenu {
@@ -7829,6 +7828,25 @@ dialog:only-child>headerbar>box {
 dialog:only-child>headerbar>box.vertical {
   display: all;
   opacity: 1;
+}
+
+headerbar {
+  background: transparent;
+}
+headerbar:backdrop {
+  background: transparent;
+}
+#Dialog\ Window headerbar {
+  background: @headerbar_bg_color;
+}
+#Dialog\ Window headerbar:backdrop {
+  background: @headerbar_backdrop_color;
+}
+dialog:only-child headerbar {
+  background: @headerbar_bg_color;
+}
+dialog:only-child headerbar:backdrop {
+  background: @headerbar_backdrop_color;
 }
 
 
@@ -7946,7 +7964,7 @@ window>popover>scrolledwindow>viewport>menu {
 
 window>popover.background.menu.menuize>stack>box>box>box>box{
   padding: 5px 8px;
-}/**
+}/*
 window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
   background-color: red;
 }
@@ -8533,6 +8551,120 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 }
 
 
+#Transform {
+  border-radius: 14px;
+  background-color: #ebeaec;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#Transform>scrolledwindow>viewport>box>notebook {
+  border: 0;
+}
+
+#Transform>scrolledwindow>viewport>box>notebook>header {
+  border-bottom: 0;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: -1px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab:not(:first-child) {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab {
+  background-color: #d4d4d7;
+  padding: 2px 12px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab:hover {
+  background-color: #c8c8cc;
+  box-shadow: 0;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab:checked {
+  background-color: #a8a9ad;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab:checked:hover {
+  background-color: #9f9fa2;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+
+#Transform>scrolledwindow>viewport>box>checkbutton {
+  margin-left: 8px;
+  margin-bottom: 2px;
+}
+#Transform>scrolledwindow>viewport>box>box>button {
+  margin-bottom: 6px;
+}
+#Transform>scrolledwindow>viewport>box>box>button:first-child {
+  margin-right: -1px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage {
+  margin-top: 3px;
+  padding-left: 6px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>checkbutton {
+  margin-top: 2px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child {
+  padding-left: 0px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid:first-child>box.horizontal:first-child {
+
+  margin-bottom: 3px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>label {
+  margin-right: 3px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>combobox {
+  margin-bottom: 3px;
+  margin-left: 3px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage>grid>box>button.flat.radio:first-child {
+  margin-right: 6px;
+}
+
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child {
+  margin-top: -2px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child>grid>checkbutton {
+  margin-left: 6px;
+  margin-top: 6px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child>grid>combobox {
+  margin-top: 6px;
+  margin-right: 2px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child>grid>image {
+  margin-bottom: 8px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child>grid>label:not(:nth-child(14)) {
+  margin-bottom: 2px;
+  margin-top: 10px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child>grid>box:nth-child(6) {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+#Transform>scrolledwindow>viewport>box>notebook>stack>box#NotebookPage:last-child>grid>box:nth-child(8) {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+
+
 
 
 /*  Scrollbar  */
@@ -8739,3 +8871,65 @@ notebook>header {
 notebook>stack {
   background-color: transparent;
 }
+
+
+
+/*  about  */
+
+#about>box>notebook>stack>frame>overlay>image {
+  margin: 0 -6px;
+}
+
+#about>headerbar>box>button.close.titlebutton {
+  margin-top: 6px;
+  margin-right: 6px;
+}
+
+#about>box>box>box>button.flat.link.text-button {
+  margin-right: 8px;
+}
+#about>box>box>box>grid.horizontal {
+  margin-right: 3px;
+}
+
+#about>box>notebook>header {
+  border-bottom: 0;
+}
+#about>box>notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 1px;
+  padding-right: 44px;
+}
+#about>box>notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#about>box>notebook>header>tabs>tab:not(:first-child) {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#about>box>notebook>header>tabs>tab {
+  background-color: #d4d4d7;
+  padding: 2px 12px;
+}
+#about>box>notebook>header>tabs>tab:hover {
+  background-color: #c8c8cc;
+  box-shadow: 0;
+}
+#about>box>notebook>header>tabs>tab:checked {
+  background-color: #a8a9ad;
+}
+#about>box>notebook>header>tabs>tab:checked:hover {
+  background-color: #9f9fa2;
+}
+#about>box>notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#about>box>notebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
