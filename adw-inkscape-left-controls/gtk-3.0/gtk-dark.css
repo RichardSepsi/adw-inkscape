@@ -105,9 +105,11 @@
 @define-color unfocused_insensitive_color mix(mix(@window_fg_color,@window_bg_color,0.5),@window_bg_color,0.5);
 @define-color borders mix(currentColor,@window_bg_color,0.85);
 @define-color unfocused_borders mix(currentColor,@window_bg_color,0.73);
-@define-color warning_color @warning_color;
-@define-color error_color @error_color;
-@define-color success_color @success_color;
+
+@define-color warning_color #ff7800;
+@define-color error_color #ed333b;
+@define-color success_color #57e389;
+
 @define-color wm_title shade(@window_fg_color, 1.8);
 @define-color wm_unfocused_title mix(@window_fg_color,@window_bg_color,0.5);
 @define-color wm_highlight black;
@@ -7832,7 +7834,7 @@ menubar {
   /*margin-top: -36px;*/
   background: transparent;
   position: absolute;
-  padding-left: 125px;
+  padding-left: 6px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -7841,7 +7843,7 @@ window.maximized menubar {
   /*margin-top: -36px;*/
   background: transparent;
   position: absolute;
-  padding-left: 125px;
+  padding-left: 6px;
 }
 menubar.shifticonmenu {
   border-bottom: 1px solid #393b3a;
@@ -7857,12 +7859,8 @@ headerbar {
 }
 headerbar>box {
   margin-bottom: -76px;
-  margin-left: 14px;
+  margin-left: 16px;
 }
-headerbar>box.horizontal.left {
-  margin-left: 0px;
-}
-
 headerbar>box.vertical {
   display: none;
   opacity: 0;
@@ -7875,10 +7873,6 @@ headerbar>box.vertical {
   margin-bottom: 0px;
   margin-left: 0px;
 }
-#Dialog\ Window>headerbar>box.horizontal.left {
-  margin-left: -3px;
-}
-
 #Dialog\ Window>headerbar>box.vertical {
   display: all;
   opacity: 1;
@@ -7891,17 +7885,9 @@ dialog:only-child>headerbar>box {
   margin-bottom: 0px;
   margin-left: 0px;
 }
-dialog:only-child>headerbar>box.horizontal.left {
-  margin-left: -3px;
-}
-
 dialog:only-child>headerbar>box.vertical {
   display: all;
   opacity: 1;
-}
-
-#about:only-child>headerbar>box.horizontal.left {
-  margin-left: 3px;
 }
 
 headerbar {
@@ -8745,7 +8731,7 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 
 #Memory {
   border-radius: 14px;
-  background-color: #ebeaec;
+  background-color: #2f2e33;
   border: 1px solid mix(currentColor,@window_bg_color,0.85);
 }
 #Memory>scrolledwindow {
@@ -8784,7 +8770,7 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 #Messages>scrolledwindow>viewport>box>scrolledwindow>textview {
   border-radius: 12px;
   padding: 10px;
-  background-color: #ebeaec;
+  background-color: #2f2e33;
 }
 #Messages>scrolledwindow>viewport>box>scrolledwindow>scrollbar {
   margin: 3px;
@@ -8792,7 +8778,7 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 
 #ObjectProperties {
   border-radius: 14px;
-  background-color: #ebeaec;
+  background-color: #2f2e33;
   border: 1px solid mix(currentColor,@window_bg_color,0.85);
 }
 #ObjectProperties>scrolledwindow {
@@ -8839,6 +8825,7 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
   border-radius: 12px;
   padding: 10px;
 }
+
 
 
 
@@ -9073,8 +9060,8 @@ notebook>stack {
 #about>box>notebook>header>tabs {
   margin-top: 6px;
   margin-bottom: 6px;
-  margin-left: 42px;
-  padding-right: 4px;
+  margin-left: 0px;
+  padding-right: 44px;
 }
 #about>box>notebook>header>tabs>tab {
   outline: 0;
@@ -9108,3 +9095,4 @@ notebook>stack {
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
   margin-right: 2px;
+}
