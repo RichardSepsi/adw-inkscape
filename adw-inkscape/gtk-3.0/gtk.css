@@ -7824,7 +7824,7 @@ headerbar {
   margin-top: -36px;
 }
 headerbar>box {
-  margin-bottom: -78px;
+  margin-bottom: -76px;
   margin-left: 16px;
 }
 headerbar>box.vertical {
@@ -8930,7 +8930,7 @@ notebook>stack {
 #about>box>notebook>header>tabs {
   margin-top: 6px;
   margin-bottom: 6px;
-  margin-left: 1px;
+  margin-left: 0px;
   padding-right: 44px;
 }
 #about>box>notebook>header>tabs>tab {
