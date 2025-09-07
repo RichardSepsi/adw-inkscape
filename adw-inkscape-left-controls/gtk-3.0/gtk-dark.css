@@ -8743,7 +8743,102 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
   margin-right: 3px;
 }
 
+#Memory {
+  border-radius: 14px;
+  background-color: #ebeaec;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#Memory>scrolledwindow {
+  border-radius: 14px;
+}
+#Memory>scrolledwindow>viewport {
+  border-radius: 14px;
+}
+#Memory>scrolledwindow>viewport>box>treeview {
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+#Memory>scrolledwindow>viewport>box>treeview>header {
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+#Memory>scrolledwindow>viewport>box>treeview>header>button:first-child {
+  border-top-left-radius: 14px;
+}
+#Memory>scrolledwindow>viewport>box>treeview>header>button:last-child {
+  border-top-right-radius: 14px;
+}
+#Memory>scrolledwindow>viewport>box>treeview>header>button {
+  padding-left: 5px;
+}
+#Memory>scrolledwindow>viewport>box>box>button {
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
 
+#Messages>scrolledwindow>viewport>box>scrolledwindow {
+  border-radius: 14px;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+  margin-bottom: 6px;
+}
+#Messages>scrolledwindow>viewport>box>scrolledwindow>textview {
+  border-radius: 12px;
+  padding: 10px;
+  background-color: #ebeaec;
+}
+#Messages>scrolledwindow>viewport>box>scrolledwindow>scrollbar {
+  margin: 3px;
+}
+
+#ObjectProperties {
+  border-radius: 14px;
+  background-color: #ebeaec;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#ObjectProperties>scrolledwindow {
+  border-radius: 14px;
+}
+#ObjectProperties>scrolledwindow>viewport {
+  border-radius: 14px;
+  padding: 6px;
+  padding-left: 8px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box>grid>scrolledwindow {
+  border-radius: 12px;
+  margin-bottom: 3px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box>grid>scrolledwindow>textview {
+  border-radius: 12px;
+  padding: 10px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>grid {
+  margin-bottom: 3px;
+  margin-top: 3px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>grid>entry {
+  margin-bottom: 3px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>grid>label {
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>grid>button {
+  padding: 6px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>grid>frame>frame>border {
+  border-radius: 12px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>grid>frame>frame>textview {
+  border-radius: 12px;
+  padding: 10px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>box>box>grid>scrolledwindow {
+  border-radius: 12px;
+}
+#ObjectProperties>scrolledwindow>viewport>box>box>box#ObjectPropertiesWidget>expander>box>box>grid>scrolledwindow>textview {
+  border-radius: 12px;
+  padding: 10px;
+}
 
 
 
