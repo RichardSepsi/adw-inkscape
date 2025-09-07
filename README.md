@@ -10,5 +10,5 @@ Tested with Inkscape v 1.4.2 on Fedora Linux 42 with Gnome 48.
 ## Installation
 1. Download the repo and extract the files
 2. Put style.css to "/usr/share/inkscape/ui" (! This will replace the original style.css that came with inkscape so make sure to back up before replacing !)
-3. Put adw-inkscape to your user themes folder (You can find it under edit > preferences > interface > theming > "User themes:").
-4. Start inkscape and change the theme in the preferences (edit > preferences > interface > theming > Change GTK theme: adw-inkscape)
+3. Put adw-inkscape to your user themes directory. If you put window titlebar buttons on the left side, you have to use the adw-inkscape-left controls folder instead! (You can find the themes directory under edit > preferences > interface > theming > "User themes:").
+5. Start inkscape and change the theme in the preferences (edit > preferences > interface > theming > Change GTK theme: adw-inkscape)
