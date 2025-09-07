@@ -105,9 +105,11 @@
 @define-color unfocused_insensitive_color mix(mix(@window_fg_color,@window_bg_color,0.5),@window_bg_color,0.5);
 @define-color borders mix(currentColor,@window_bg_color,0.85);
 @define-color unfocused_borders mix(currentColor,@window_bg_color,0.81);
-@define-color warning_color @warning_color;
-@define-color error_color @error_color;
-@define-color success_color @success_color;
+
+@define-color warning_color #f57900;
+@define-color error_color #cc0000;
+@define-color success_color #73d216;
+
 @define-color wm_title shade(@window_fg_color, 1.8);
 @define-color wm_unfocused_title mix(@window_fg_color,@window_bg_color,0.5);
 @define-color wm_highlight alpha(white,0.5);
@@ -9061,3 +9063,4 @@ notebook>stack {
   border-top-right-radius: 9px;
   border-bottom-right-radius: 9px;
   margin-right: 2px;
+}
