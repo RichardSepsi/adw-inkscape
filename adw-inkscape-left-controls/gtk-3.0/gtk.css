@@ -7986,6 +7986,9 @@ window>popover>grid>entry {
 window>popover>grid>scrolledwindow.frame {
   border-radius: 12px;
 }
+window>popover>grid>checkbutton {
+  margin-bottom: 3px;
+}
 
 
 
@@ -9883,8 +9886,10 @@ scrolledwindow.frame treeview{
   margin-bottom: 0px;
 }
 #TopToolbars>box>box>button {
-  padding: 3px;
-  min-width: 26px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
   min-height: 26px;
   margin-right: 2px;
 }
