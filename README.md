@@ -11,7 +11,7 @@ Tested with Inkscape v 1.4.2 on Fedora Linux 42 with Gnome 48.
 
 ##### Installation with a script
 
-1. Install or update adw-gimp3 via the command below:
+1. Install or update <b>adw-inkscape</b> via the command below:
 
     ```bash
     curl -s https://raw.githubusercontent.com/RichardSepsi/adw-inkscape/main/install.sh | bash
