@@ -22,10 +22,10 @@ Tested with Inkscape v 1.4.2 on Fedora Linux 42 with Gnome 48.
 
 ##### Manual installation
 1. Download the repo and extract the files
-2. Put style.css to `/usr/share/inkscape/ui` (! This will replace the original style.css that came with inkscape so make sure to back up before replacing !)
+2. Put style.css to `~/.config/inkscape/ui/` (! This will replace the original style.css that came with inkscape so make sure to back up before replacing !)
 3. Put `adw-inkscape` to your user themes directory:
-- for native packages: `~/.local/share/themes`
-- for flatpak: `~/.var/app/org.inkscape/Inkscape/data/themes`
+- for native packages: `~/.local/share/themes/`
+- for flatpak: `~/.var/app/org.inkscape/Inkscape/data/themes/`
 4. Launch Inkscape
 5. Navigate to `Edit → Preferences → Interface → Theming`
 6. Change the GTK theme to `adw-inkscape` (or `adw-inkscape-left-controls` for left-side window titlebar icons)
