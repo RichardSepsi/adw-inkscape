@@ -10017,6 +10017,9 @@ scrolledwindow.frame treeview{
   min-height: 26px;
   margin-right: 2px;
 }
+#SubToolBox>box>separator {
+  margin-right: 2px;
+}
 #SubToolBox>box>box>label {
   margin-right: 8px;
   margin-left: 8px;
@@ -10028,6 +10031,10 @@ scrolledwindow.frame treeview{
 #SubToolBox>box>box>spinbutton>entry {
   min-height: 26px;
 }
+#SubToolBox #unit-tracker combobox {
+  margin-right: 2px;
+}
+
 #TopToolbars>box>box {
   margin-top: 6px;
   margin-left: 6px;
@@ -10040,6 +10047,9 @@ scrolledwindow.frame treeview{
   padding-left: 8px;
   padding-right: 8px;
   min-height: 26px;
+  margin-right: 2px;
+}
+#TopToolbars>box>box>separator {
   margin-right: 2px;
 }
 #TopToolbars>box>box>button:last-child {
