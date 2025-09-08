@@ -16,11 +16,11 @@ git clone $REPO $CLONE_DIR
 
 if [ -d "$NATIVE" ]; then
 	echo "Installing to: $NATIVE"
-	cp -r $CLONE_DIR/$APP ~/.local/share/themes
+	cp -r $CLONE_DIR/$APP* ~/.local/share/themes/
 	cp -f $CLONE_DIR/style.css $NATIVE/ui/
 elif [ -d "$FLATPAK" ]; then
 	echo "Installing to: $FLATPAK"
-	cp -r $CLONE_DIR/$APP $FLATPAK/data/themes
+	cp -r $CLONE_DIR/$APP* $FLATPAK/data/themes/
 	cp -f $CLONE_DIR/style.css $FLATPAK/config/inkscape/ui/
 fi
 
