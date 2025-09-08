@@ -3409,13 +3409,13 @@ notebook > header.left {
 }
 notebook > header.left > tabs {
   margin-right: -2px;
-}
+}/*
 notebook > header.left > tabs > tab:not(.reorderable-page):hover {
   box-shadow: inset -4px 0 alpha(currentColor,0.15);
 }
 notebook > header.left > tabs > tab:not(.reorderable-page):checked {
   box-shadow: inset -4px 0 @accent_bg_color;
-}
+}*/
 notebook > header.right {
   border-left-style: solid;
 }
@@ -7992,6 +7992,123 @@ window>popover>grid>checkbutton {
 
 
 
+/*  start screen  */
+
+#start-screen-window>box>notebook#startscreennotebook>stack>box>box>button:not(:last-child) {
+  margin-right: 3px;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>box>button {
+  margin-top: 2px;
+  margin-bottom: -1px;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>button {
+  margin-top: 2px;
+  margin-bottom: -1px;
+}
+#start-screen-window>box>box>buttonbox.dialog-action-area.horizontal {
+  margin-bottom: 0;
+}
+
+#start-screen-window>box>notebook#startscreennotebook>header {
+  border: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs {
+  margin-bottom: 6px;
+  padding-left: 3px;
+  margin-top: 7px;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab:not(:first-child) {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab {
+  background-color: #d4d4d7;
+  padding: 2px 12px;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab:hover {
+  background-color: #c8c8cc;
+  box-shadow: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab:checked {
+  background-color: #a8a9ad;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab:checked:hover {
+  background-color: #9f9fa2;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#start-screen-window>box>notebook#startscreennotebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook {
+  border: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header {
+  border: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs {
+  border: 0;
+  padding-top: 0;
+  margin-left: 5px;
+  margin-right: 6px;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs>tab:not(:first-child) {
+  border-top: 1px solid alpha(currentColor,0.15);
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs>tab {
+  background-color: #d4d4d7;
+  padding: 3px 11px;
+  box-shadow: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs>tab:hover {
+  background-color: #c8c8cc;
+  box-shadow: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs>tab:checked {
+  background-color: #a8a9ad;
+  box-shadow: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs>tab:checked:hover {
+  background-color: #9f9fa2;
+  box-shadow: 0;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>header>tabs>tab:last-child {
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>stack>scrolledwindow {
+  border-radius: 12px;
+  margin-right: 5px;
+  background-color: #ebeaec;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>stack>scrolledwindow>treeview>header>button {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: transparent;
+}
+#start-screen-window>box>notebook#startscreennotebook>stack>box>notebook>stack>scrolledwindow:not(:first-child) {
+  padding: 2px;
+}
+
+
 
 /*  Cards - general  */
 
@@ -9708,6 +9825,7 @@ window>popover>grid>checkbutton {
   border-bottom-right-radius: 9px;
   margin-right: 2px;
 }
+
 #CloneTiler>scrolledwindow>viewport>box>box>grid>spinbutton {
   margin-bottom: 4px;
 }
