@@ -7810,6 +7810,12 @@ window.background:not(.solid-csd):not(.csd) > notebook > stack:not(:only-child) 
 
 
 
+
+
+/*--------------------*/
+/*  Specific styling  */
+/*--------------------*/
+
 /*  Menubar and titlebar  */
 
 window {
@@ -7955,32 +7961,43 @@ dialog:only-child headerbar:backdrop {
 
 
 
-/*  Cards  */
+/*  popovers  */
 
-#Objects>scrolledwindow>viewport>box>box>scrolledwindow {
-  background-color: #2f2e33;
-  border-radius: 12px;
-}
-#Objects>scrolledwindow>viewport>box>box>scrolledwindow>treeview {
-  background-color: #2f2e33;
-  border-radius: 12px;
-}
-
-#DockedDialogNotebook>stack>box#Objects>scrolledwindow>viewport>box>box>box {
-  margin-bottom: 5px;
-}
-
-#DockedDialogNotebook scrolledwindow>scrollbar {
-  margin-right: 3px;
-  margin-top: 3px;
+window>popover>scrolledwindow>viewport>menu>menuitem {
+  padding: 6px 10px;
   margin-bottom: 3px;
+  margin-right: 3px;
 }
-#DockedDialogNotebook scrolledwindow scrolledwindow>scrollbar {
-  margin: 0px;
+window>popover>scrolledwindow>viewport>menu {
+  margin-bottom: -3px;
+  margin-right: -3px;
 }
-#DockedDialogNotebook #Objects scrolledwindow scrolledwindow>scrollbar {
-  margin: 3px;
+
+window>popover.background.menu.menuize>stack>box>box>box>box{
+  padding: 5px 8px;
 }
+
+window>popover>box>scrolledwindow:first-child {
+  border-radius: 12px;
+  margin-bottom: 4px;
+}
+window>popover>box>scrolledwindow>viewport>treeview>header>button:first-child {
+  border-top-left-radius: 12px;
+}
+window>popover>box>scrolledwindow>viewport>treeview>header>button:last-child {
+  border-top-right-radius: 12px;
+}
+window>popover>box>box:last-child>button:not(:last-child) {
+  margin-right: 6px;
+}
+window>popover>box>box:last-child>separator {
+  margin-right: 6px;
+}
+
+
+
+/*  Cards - general  */
+
 
 #DockedDialogNotebook>header>tabs>tab .close-button {
   margin-top: 4px;
@@ -8006,6 +8023,37 @@ dialog:only-child headerbar:backdrop {
   margin-right: 8px;
 }
 
+
+#DockedDialogNotebook scrolledwindow>scrollbar {
+  margin-right: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+#DockedDialogNotebook scrolledwindow scrolledwindow>scrollbar {
+  margin: 0px;
+}
+
+#Objects>scrolledwindow>viewport>box>box>scrolledwindow {
+  background-color: #2f2e33;
+  border-radius: 12px;
+}
+#Objects>scrolledwindow>viewport>box>box>scrolledwindow>treeview {
+  background-color: #2f2e33;
+  border-radius: 12px;
+}
+
+
+
+/*  Cards  */
+
+#Objects>scrolledwindow>viewport>box>box>box {
+  margin-bottom: 5px;
+}
+
+#Objects scrolledwindow scrolledwindow>scrollbar {
+  margin: 3px;
+}
+
 #Objects entry.search>image {
   margin-left: 4px;
 }
@@ -8017,24 +8065,6 @@ dialog:only-child headerbar:backdrop {
   padding: 20px ;
 }
 
-window>popover>scrolledwindow>viewport>menu>menuitem {
-  padding: 6px 10px;
-  margin-bottom: 3px;
-  margin-right: 3px;
-}
-window>popover>scrolledwindow>viewport>menu {
-  margin-bottom: -3px;
-  margin-right: -3px;
-}
-
-
-window>popover.background.menu.menuize>stack>box>box>box>box{
-  padding: 5px 8px;
-}/*
-window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
-  background-color: red;
-}
-*/
 
 #Swatches>scrolledwindow>viewport {
   border-radius: 14px;
@@ -8058,7 +8088,6 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 #Swatches>scrolledwindow>viewport>box>box>box>button.popup.toggle {
   margin-right: 3px;
 }
-
 
 #FillStroke {
   border-radius: 14px;
@@ -9133,6 +9162,213 @@ window>popover.background.menu.menuize>stack>box>box>box>box>modelbutton:hover {
 #FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box {
   margin-bottom: 4px;
 }
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>frame {
+  border-radius: 12px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>frame>border {
+  border-radius: 12px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>box>spinbutton:first-child {
+  margin-right: 3px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>box#DualSpinScale>box>box#SpinScale:first-child{
+  margin-bottom: 4px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>box#DualSpinScale>button{
+  margin-left: 6px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>frame>frame {
+  border-radius: 12px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>frame>frame>border {
+  border-radius: 12px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box #ColorPreview {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+#FilterEffects>scrolledwindow>viewport>box>grid>paned>scrolledwindow.effect-params>viewport>box>box:last-child>box>box>box>button.image-button {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+#DocumentResources>scrolledwindow>viewport>box>box>paned>separator {
+  margin: 6px;
+}
+#DocumentResources>scrolledwindow>viewport>box>box>paned>scrolledwindow {
+  border-radius: 12px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#DocumentResources>scrolledwindow>viewport>box>box>paned>stack>scrolledwindow {
+  border-radius: 12px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#DocumentResources>scrolledwindow>viewport>box>box>paned>stack>scrolledwindow>scrollbar {
+  margin: 3px;
+}
+#DocumentResources>scrolledwindow>viewport>box>box>paned>stack>scrolledwindow>treeview>header>button:first-child {
+  border-top-left-radius: 12px;
+}
+#DocumentResources>scrolledwindow>viewport>box>box>paned>stack>scrolledwindow>treeview>header>button:last-child {
+  border-top-right-radius: 12px;
+}
+#DocumentResources>scrolledwindow>viewport>box>box>box>button:not(:last-child) {
+  margin-right: 4px;
+}
+#DocumentResources>scrolledwindow>viewport>box>box>box>button {
+  margin-bottom: 4px;
+}
+#DocumentResources>scrolledwindow>viewport>box>box>box>entry {
+  margin-bottom: 4px;
+}
+
+#Glyphs>scrolledwindow>viewport>box>grid>grid>frame:first-child {
+  margin-right: 3px;
+  margin-bottom: 3px;
+}
+#Glyphs>scrolledwindow>viewport>box>grid>grid>frame>border {
+  border-radius: 12px;
+  background-color: #2f2e33;
+}
+#Glyphs>scrolledwindow>viewport>box>grid>label {
+  margin-left: 6px;
+  margin-bottom: 3px;
+}
+#Glyphs>scrolledwindow>viewport>box>grid>combobox {
+  margin-left: 6px;
+  margin-bottom: 3px;
+}
+#Glyphs>scrolledwindow>viewport>box>grid>scrolledwindow {
+  border-radius: 12px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+  padding: 6px;
+  margin-bottom: 3px;
+}
+
+#UndoHistory>scrolledwindow>viewport>box>scrolledwindow {
+  border-radius: 12px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#UndoHistory>scrolledwindow>viewport>box>scrolledwindow>scrollbar {
+  margin: 3px;
+}
+
+#Text>scrolledwindow {
+  border-radius: 12px;
+  background-color: #2f2e33;
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#Text>scrolledwindow>scrollbar {
+  margin: 3px;
+}
+
+#Text #TextEdit\ Notebook {
+ border: 0;
+}
+
+#Text #TextEdit\ Notebook>header {
+ border: 0;
+}
+#Text #TextEdit\ Notebook>header>tabs {
+  margin-top: 6px;
+  margin-bottom: 5px;
+}
+#Text #TextEdit\ Notebook>header>tabs>tab {
+  outline: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0;
+}
+#Text #TextEdit\ Notebook>header>tabs>tab:not(:first-child) {
+  border-left: 1px solid alpha(currentColor,0.15);
+}
+#Text #TextEdit\ Notebook>header>tabs>tab {
+  background-color: #424347;
+  padding: 2px 12px;
+}
+#Text #TextEdit\ Notebook>header>tabs>tab:hover {
+  background-color: #4e4e52;
+  box-shadow: 0;
+}
+#Text #TextEdit\ Notebook>header>tabs>tab:checked {
+  background-color: #6d6d6f;
+}
+#Text #TextEdit\ Notebook>header>tabs>tab:checked:hover {
+  background-color: #79787b;
+}
+#Text #TextEdit\ Notebook>header>tabs>tab:first-child {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+  margin-left: 2px;
+}
+#Text #TextEdit\ Notebook>header>tabs>tab:last-child {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin-right: 2px;
+}
+
+#Text #TextEdit\ Notebook>stack>box:first-child {
+  margin-top: -3px;
+  margin-left: 2px;
+}
+#Text #TextEdit\ Notebook>stack>box:first-child>box>entry {
+  margin-right: 4px;
+  margin-bottom: 6px;
+}
+#Text #TextEdit\ Notebook>stack>box:first-child>box>button {
+  margin-bottom: 6px;
+}
+#Text #TextEdit\ Notebook>stack>box>label {
+  margin-left: 9px;
+  margin-bottom: 3px;
+}
+#Text #TextEdit\ Notebook>stack #FontSelectorGrid {
+  margin-left: 3px;
+}
+#Text #TextEdit\ Notebook>stack #FontSelectorGrid>frame:first-child {
+  margin-right: 3px;
+}
+#Text #TextEdit\ Notebook>stack #FontSelectorGrid>frame:nth-child(2) {
+  margin-bottom: 3px;
+}
+#Text #TextEdit\ Notebook>stack #FontSelectorGrid>frame>border {
+  border-radius: 12px;
+  background-color: #2f2e33;
+}
+#Text>scrolledwindow>viewport>box>box>box>button {
+  margin-bottom: 3px;
+}
+#Text>scrolledwindow>viewport>box>box>box>button:first-child {
+  margin-left: 6px;
+}
+#Text>scrolledwindow>viewport>box>box>box>button:last-child {
+  margin-right: 3px;
+}
+#Text #TextEdit\ Notebook>stack>box>label:last-child {
+  margin-top: 6px;
+}
+
+
+
+
+/*  Remove Layer selector from statusbar  */
+/*
+#LayerSelector>button {
+  margin-left: 40px;
+}
+#LayerSelector {
+  display: none;
+  opacity: 0;
+  min-width: 400px;
+  margin-right: -440px;
+}
+#Statusbar>separator {
+  margin-left: 6px;
+}*/
 
 
 
@@ -9154,23 +9390,6 @@ scrollbar:not(.overlay-indicator) {
 scrolledwindow scrollbar+* {
 	background-color: transparent;
 }
-
-
-
-/*  Remove Layer selector from statusbar  */
-/*
-#LayerSelector>button {
-  margin-left: 40px;
-}
-#LayerSelector {
-  display: none;
-  opacity: 0;
-  min-width: 400px;
-  margin-right: -440px;
-}
-#Statusbar>separator {
-  margin-left: 6px;
-}*/
 
 
 
