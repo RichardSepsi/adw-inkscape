@@ -269,8 +269,8 @@ iconview *:hover {
 /* Selector dialog */
 #SelectorsAndStyleDialog button {
     min-height: 16px;
-    margin: 2px;
-    padding: 2px;
+    /*margin: 2px;
+    padding: 2px;*/
 }
 
 #SelectorsAndStyleDialog .toggle {
@@ -282,7 +282,7 @@ iconview *:hover {
 }
 
 #SelectorsAndStyleDialog .radio.image-button {
-    margin: 0;
+    /*margin: 0;*/
     padding: 0px;
     border-radius: 2px 0 0 2px;
 }
