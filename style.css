@@ -128,6 +128,12 @@
 .noborder{
     border-width:0;
 }
+#CloneTiler>scrolledwindow.noborder {
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
+#Text>scrolledwindow.noborder {
+  border: 1px solid mix(currentColor,@window_bg_color,0.85);
+}
 
 /* blinking animation for dialogs reopen*/
 @keyframes blink_border {
@@ -804,10 +810,10 @@ button.menu-btn-tight {
 }
 /*
  * Inkscape Export Dialog
- */
+ *//*
 #ExportDialog #export_selection{
     border-radius: 0px;
-}
+}*/
 #ExportDialog #export_preview_single {
     border: 1px solid;
 }
@@ -975,7 +981,7 @@ padding:3px 3px 10px 3px;
 }
 
 #LivePathEffect list row{
-    margin:0;
+    /*margin:0;*/
     padding:0;
     border-width:0;
     border-style:none;
